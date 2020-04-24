@@ -45,3 +45,4 @@ now you are inside bitbake shell::
     1000@4a99594c25a6:~/build_qemux86_64$
     1000@4a99594c25a6:~/build_qemux86_64$ bitbake core-image-minimal
 
+For more complete information have a look at https://www.yoctoproject.org/
