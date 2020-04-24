@@ -1,31 +1,27 @@
-Podman OE/Yocto Boilerplate Project
-===================================
+Yocto Dunfell playground
+========================
 
-provides a basic structure for a openembedded/yocto base system builder.
+provides a basic yocto playground for testing dunfell version
 
 
 How to use
 ----------
 
-1) Checkout this project
-2) Create your own oe/yocto project directory
-3) Copy files and dirs to the root of your own oe/yocto project
-4) Checkout other repos as subdirectories to layers/
-5) create podman.env from podman.env.sample
-6) create build.env from build.env.sample
-
 example::
 
-    git clone https://github.com/reinhardd/podman_oe_boilerplate.git my_own_project
-    cd my_own_project
-    rm -rf .git
-    git init
+    git clone https://github.com/reinhardd/dunfell_demo.git 
+    cd dunfell_demo
     git submodule add -b dunfell git://git.yoctoproject.org/poky layers/poky
     git submodule add -b dunfell git://git.openembedded.org/meta-openembedded layers/meta-openembedded
     cp podman.env.sample podman.env
     cp build.env.sample build.env
-    # edit podman.env and build.env
+    # edit podman.env and build.env as you like    
+
+    # create the download directory
+    # if you need to use an existing location remove the mkdir cmd 
+    # and edit DL_DIR in build.env
     mkdir -p ../dunfell_downloads
+    
     env/podman_build_shell
 
 now you are inside bitbake shell::
@@ -43,8 +39,4 @@ now you are inside bitbake shell::
     meta-networking       /home/reinhard/Develop/oe_yocto/test/my_own_project/layers/meta-openembedded/meta-networking  5
     1000@4a99594c25a6:~/build_qemux86_64$
     1000@4a99594c25a6:~/build_qemux86_64$ bitbake core-image-minimal
-
-
-
-
 
