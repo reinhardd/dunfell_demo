@@ -9,5 +9,5 @@ layer: poky/meta-yocto-bsp
 layer: meta-openembedded/meta-oe
 layer: meta-openembedded/meta-python
 layer: meta-openembedded/meta-networking
-
+layer: meta
 
