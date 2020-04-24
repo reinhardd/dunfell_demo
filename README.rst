@@ -13,6 +13,11 @@ example::
     cd dunfell_demo
     git submodule add -b dunfell git://git.yoctoproject.org/poky layers/poky
     git submodule add -b dunfell git://git.openembedded.org/meta-openembedded layers/meta-openembedded
+    #
+    # add more layers if you like
+    #
+    # edit repo.txt
+    #
     cp podman.env.sample podman.env
     cp build.env.sample build.env
     # edit podman.env and build.env as you like    
