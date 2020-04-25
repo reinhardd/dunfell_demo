@@ -6,3 +6,11 @@
 	path = layers/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
 	branch = dunfell
+[submodule "layers/meta-qt5"]
+	path = layers/meta-qt5
+	url = https://github.com/meta-qt5/meta-qt5.git
+	branch = master
+[submodule "layers/meta-python2"]
+	path = layers/meta-python2
+	url = git://git.openembedded.org/meta-python2
+	branch = dunfell
